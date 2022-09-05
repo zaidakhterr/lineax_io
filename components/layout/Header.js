@@ -1,9 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { Dialog, Disclosure, Transition } from "@headlessui/react";
+import { Dialog, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import LineaxLogo from "components/icons/LineaxLogo";
-import { classNames } from "utils/helpers";
 
 function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -36,6 +35,12 @@ function Header() {
             <Link href="/#contact">
               <a className="transition-opacity hover:opacity-50">CONTACT US</a>
             </Link>
+            <a
+              href="#"
+              className="border border-black bg-black px-3 py-2 uppercase text-white"
+            >
+              Start a project
+            </a>
           </div>
 
           <button
@@ -80,7 +85,7 @@ function Header() {
                 leaveFrom="opacity-100 -translate-y-0"
                 leaveTo="opacity-0 -translate-y-full"
               >
-                <Dialog.Panel className="flex w-full transform flex-col items-start overflow-y-auto overflow-x-hidden bg-white px-6 py-2 uppercase shadow">
+                <Dialog.Panel className="flex w-full transform flex-col items-start overflow-y-auto overflow-x-hidden bg-white px-6 pt-2 pb-6q uppercase shadow">
                   <div className="relative flex w-full items-center justify-between">
                     <Link href="/">
                       <a className="w-32 md:w-40">
@@ -120,6 +125,12 @@ function Header() {
                       CONTACT US
                     </a>
                   </Link>
+                  <a
+                    href="#"
+                    className="ml-auto bg-black p-3 uppercase text-white"
+                  >
+                    Start a project
+                  </a>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
