@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <>
-      <header className="z-50 mx-auto max-w-7xl bg-white px-6 py-2 md:px-8 md:py-10">
+      <header className="z-50 mx-auto max-w-7xl bg-white px-6 py-2 text-slate-900 md:px-8 md:py-10">
         <div className="relative flex items-center justify-between">
           <Link href="/">
             <a className="w-32 md:w-40">
@@ -37,7 +37,7 @@ function Header() {
             </Link>
             <a
               href="#"
-              className="border border-black bg-black px-3 py-2 uppercase text-white"
+              className="border border-slate-900 bg-slate-900 px-3 py-2 uppercase text-white"
             >
               Start a project
             </a>
@@ -56,7 +56,7 @@ function Header() {
       <Transition show={isOpen} as={React.Fragment}>
         <Dialog
           as="div"
-          className="relative z-[200] lg:hidden"
+          className="relative z-[200] text-slate-900 lg:hidden"
           onClose={closeModal}
         >
           <Transition.Child
@@ -69,7 +69,7 @@ function Header() {
             leaveTo="opacity-0"
           >
             <div
-              className="fixed inset-0 bg-black bg-opacity-50"
+              className="fixed inset-0 bg-slate-900 bg-opacity-50"
               onClick={closeModal}
             />
           </Transition.Child>
@@ -127,7 +127,7 @@ function Header() {
                   </Link>
                   <a
                     href="#"
-                    className="ml-auto bg-black p-3 uppercase text-white"
+                    className="ml-auto bg-slate-900 p-3 uppercase text-white"
                   >
                     Start a project
                   </a>
