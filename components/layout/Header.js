@@ -25,7 +25,7 @@ function Header() {
             </a>
           </Link>
 
-          <div className="hidden items-center justify-end space-x-8 md:flex">
+          <div className="hidden items-center justify-end space-x-8 lg:flex">
             <Link href="/#services">
               <a className="transition-opacity hover:opacity-50">SERVICES</a>
             </Link>
@@ -45,7 +45,7 @@ function Header() {
 
           <button
             onClick={openModal}
-            className="inline-flex items-center justify-center rounded-md p-2 outline-none md:hidden"
+            className="inline-flex items-center justify-center rounded-md p-2 outline-none lg:hidden"
           >
             <span className="sr-only">Open main menu</span>
 
@@ -56,7 +56,7 @@ function Header() {
       <Transition show={isOpen} as={React.Fragment}>
         <Dialog
           as="div"
-          className="relative z-[200] md:hidden"
+          className="relative z-[200] lg:hidden"
           onClose={closeModal}
         >
           <Transition.Child
@@ -75,7 +75,7 @@ function Header() {
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto overflow-x-hidden">
-            <div className="fixed right-0 w-full md:max-w-xs">
+            <div className="fixed right-0 w-full">
               <Transition.Child
                 as={React.Fragment}
                 enter="ease-in duration-200"
@@ -85,7 +85,7 @@ function Header() {
                 leaveFrom="opacity-100 -translate-y-0"
                 leaveTo="opacity-0 -translate-y-full"
               >
-                <Dialog.Panel className="flex w-full transform flex-col items-start overflow-y-auto overflow-x-hidden bg-white px-6 pt-2 pb-6q uppercase shadow">
+                <Dialog.Panel className="pb-6q flex w-full transform flex-col items-start overflow-y-auto overflow-x-hidden bg-white px-6 pt-2 pb-6 uppercase shadow">
                   <div className="relative flex w-full items-center justify-between">
                     <Link href="/">
                       <a className="w-32 md:w-40">
