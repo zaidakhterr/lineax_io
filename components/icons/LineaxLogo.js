@@ -1,8 +1,6 @@
 function LineaxLogo({ className = "" }) {
   return (
     <svg
-      width="229"
-      height="40"
       viewBox="0 0 229 40"
       className={className}
       xmlns="http://www.w3.org/2000/svg"

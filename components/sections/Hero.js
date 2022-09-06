@@ -11,7 +11,7 @@ function Hero() {
           Creating software to solve
           <br className="hidden md:block" /> your problems
         </h1>
-        <p className="mb-8 max-w-prose text-slate-800">
+        <p className="mb-8 max-w-prose text-sm text-slate-800 sm:text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
           excepturi? Animi inventore, placeat illum voluptate reiciendis itaque
           laborum. Iure dolorem doloremque, ipsam alias at facere quae earum
