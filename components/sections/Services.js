@@ -38,7 +38,7 @@ function Services() {
       className="mx-auto max-w-7xl bg-white px-6 py-10 md:px-8"
     >
       <h2 className="mb-8 text-2xl text-slate-700">Our Services</h2>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {SERVICES.map(service => (
           <div key={service.title}>
             <div className="mb-1 flex w-full items-center">
@@ -57,7 +57,9 @@ function Services() {
               </h3>
             </div>
 
-            <p className="pl-4 text-sm text-slate-600">{service.description}</p>
+            <p className="pl-4 text-sm text-slate-600 md:text-base">
+              {service.description}
+            </p>
           </div>
         ))}
       </div>
