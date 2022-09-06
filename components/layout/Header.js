@@ -35,12 +35,12 @@ function Header() {
             <Link href="/#contact">
               <a className="transition-opacity hover:opacity-50">CONTACT US</a>
             </Link>
-            <a
+            {/* <a
               href="#"
               className="border border-slate-900 bg-slate-900 px-3 py-2 uppercase text-white"
             >
               Start a project
-            </a>
+            </a> */}
           </div>
 
           <button
@@ -125,12 +125,12 @@ function Header() {
                       CONTACT US
                     </a>
                   </Link>
-                  <a
+                  {/* <a
                     href="#"
                     className="ml-auto bg-slate-900 p-3 uppercase text-white"
                   >
                     Start a project
-                  </a>
+                  </a> */}
                 </Dialog.Panel>
               </Transition.Child>
             </div>
