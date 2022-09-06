@@ -20,12 +20,12 @@ function Hero() {
         <div className=" flex flex-wrap items-start">
           <a
             href="#"
-            className="mr-4 mb-4 block w-44 border border-black bg-black p-2.5 text-center uppercase text-white md:p-3"
+            className="mr-4 mb-4 block border border-black bg-black p-2.5 text-center text-sm uppercase text-white sm:text-base md:w-44 md:p-3"
           >
             Start a project
           </a>
           <Link href="/#projects" passHref>
-            <a className="mb-4 block w-44 border border-black p-2.5 text-center uppercase md:p-3">
+            <a className="mb-4 block border border-black p-2.5 text-center text-sm uppercase sm:text-base md:w-44 md:p-3">
               View our work
             </a>
           </Link>
